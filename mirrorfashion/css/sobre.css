@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 18px;
+    color: #333333;
+    /* border: 2px solid black; */
+}
+
+div {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Comentários no CSS */
+h1 {
+    background: url(../img/sobre-background.jpg);
+    padding: 10px 15px;
+}
+
+h2 {
+    border-bottom: 2px black solid;
+    margin-top: 50px;
+}
+
+figure {
+    background-color: rgb(235,235,235);
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0 10px;
+    text-align: center;
+    width: 580px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+p  {
+    padding: 0 45px;
+    text-indent: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#familia-pelho {
+    float: right;
+    margin-left: 30px;
+    width: 250px;
+}
+
+#familia-pelho img {
+    width: 85%;
+}
+
+#footer {
+    border-top: 1px dashed #999;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#footer img {
+    margin-right: 20px;
+    vertical-align: middle;
+    width: 100px;
+}
