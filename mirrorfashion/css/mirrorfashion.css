@@ -162,9 +162,13 @@ header {
     text-align: center;
 }
 
+.paineis {
+    display: flex;
+    justify-content: space-between;
+}
+
 .painel {
     background: pink;
-    float: left;
     padding: 15px;
     width: 49.5%;
 }
@@ -176,12 +180,19 @@ header {
     text-transform: uppercase;
 }
 
+.painel ol {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .painel li {
-    display: inline-block;
+    border: 1px solid red;
+    background: yellow;
     margin-bottom: 10px;
+    padding: 5px;
     text-align: center;
     vertical-align: top;
-    width: 32.5%;
+    width: 33.3%;
     word-wrap: break-word; /* força a quebra da palavra caso ela seja muito grande */
 }
 
@@ -196,7 +207,6 @@ header {
 
 .mais-vendidos {
     background: rgb(197, 231, 231);
-    float: right;
 }
 
 /* #endregion home */
