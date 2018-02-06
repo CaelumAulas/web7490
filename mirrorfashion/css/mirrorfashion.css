@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,6 +47,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+*/
 
 /* Estilos principais Mirror Fashion ========= */
 
@@ -94,7 +103,7 @@ header {
 
 /* #endregion header */
 
-
+/* #region home */
 .busca,
 .menu-departamentos {
     background-color: #ddd;
@@ -152,3 +161,42 @@ header {
     padding: 10px;
     text-align: center;
 }
+
+.painel {
+    background: pink;
+    float: left;
+    padding: 15px;
+    width: 49.5%;
+}
+
+.painel h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.painel li {
+    display: inline-block;
+    margin-bottom: 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 32.5%;
+    word-wrap: break-word; /* força a quebra da palavra caso ela seja muito grande */
+}
+
+.painel a {
+    color: black;
+    text-decoration: none;
+}
+
+.painel img {
+    margin-bottom: 10px;
+}
+
+.mais-vendidos {
+    background: rgb(197, 231, 231);
+    float: right;
+}
+
+/* #endregion home */
