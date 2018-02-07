@@ -2,8 +2,13 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+
+    <meta name="viewport" content="width=device-width">
+
     <title>Mirror Fashion</title>
     <link rel="stylesheet" href="css/mirrorfashion.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 680px)">
 </head>
 <body>
     <header class="container">
@@ -13,7 +18,7 @@
             </a>
         </h1>
         <div class="sacola">
-            Nenhum item na sacola de compras
+            <span>Nenhum item na sacola de compras</span>
         </div>
         <nav class="menu-opcoes">
             <a href="#">Sua Conta</a>
@@ -37,7 +42,24 @@
             <h2>Departamentos</h2>
             <nav>
                 <ul>
-                    <li><a href="#">Blusas e Camisas</a></li>
+                    <li>
+                        <a href="#">Blusas e Camisas</a>
+
+                        <ul>
+                            <li><a href="#">Manga Longa</a></li>
+                            <li>
+                                <a href="#">Manga Curta</a>
+                            </li>
+                            <li>
+                                <a href="#">Camisa Social</a>
+                            </li>
+                            <li>
+                                <a href="#">Camisa Casual</a>
+                            </li>
+                        </ul>
+                    
+                    </li>
+
                     <li><a href="#">Calças</a></li>
                     <li><a href="#">Saias</a></li>
                     <li><a href="#">Vestidos</a></li>
@@ -51,7 +73,7 @@
         <section class="banner">
             <figure>
                 <img src="img/destaque-home.png" alt="Campanha Big City Nights">
-                <figcaption>Big City Nights para noites badaladas uhul</figcaption>
+                <figcaption>Big City <span class="roxo">Nights</span> para noites badaladas uhul</figcaption>
             </figure>
         </section>
 
@@ -171,11 +193,33 @@
                 <button>Ver mais</button>
             </section>
         </div>
-
-
     </main>
     <footer>
+        <div class="container">
+            <div class="logo-footer">
+                <img src="img/logo-rodape.png" alt="logo Mirror Fashion">
+            </div>
 
+            <div class="redes-sociais">
+                <ul>
+                    <li>
+                        <a href="http://facebook.com">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://plus.google.com">
+                            Google Plus
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

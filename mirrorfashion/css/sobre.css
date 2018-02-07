@@ -42,6 +42,23 @@ p  {
     text-indent: 30px;
 }
 
+p::first-line {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 50px;
+}
+
+h1 + p {
+    background-color: yellow;
+}
+
+/* seletor de irmãos */
+figure ~ p {
+    background-color: pink;
+}
+
 li {
     margin-bottom: 10px;
 }
