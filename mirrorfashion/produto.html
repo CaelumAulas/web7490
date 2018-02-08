@@ -27,38 +27,82 @@
         </nav>
     </header>
     <main class="container produto">
-        <h1>Camiseta Ecko Caveira bad to the bone</h1>
-        <p>por apenas R$ 48,95</p>
 
-        <form>
-            <fieldset class="cores">
-                <legend>Escolha a cor</legend>
-                
-                <label for="rosa">
-                    <input type="radio" name="cor" value="rosa" id="rosa" checked>
-                    <img src="img/produtos/foto2-rosa.png" alt="Camiseta Rosa">
-                </label>
+        <section>
+            <h1>Camiseta Ecko Caveira bad to the bone</h1>
+            <p>por apenas R$ 48,95</p>
+    
+            <form>
+                <fieldset class="cores">
+                    <legend>Escolha a cor</legend>
+                    
+                    <label for="rosa">
+                        <input type="radio" name="cor" value="rosa" id="rosa" checked>
+                        <img src="img/produtos/foto2-rosa.png" alt="Camiseta Rosa">
+                    </label>
+    
+                    <label for="azul">
+                        <input type="radio" name="cor" value="azul" id="azul">
+                        <img src="img/produtos/foto2-azul.png" alt="Camiseta azul">
+                    </label>
+    
+                    <label for="verde">
+                        <input type="radio" name="cor" value="verde" id="verde">
+                        <img src="img/produtos/foto2-verde.png" alt="Camiseta verde">
+                    </label>
+                </fieldset>
+    
+                <fieldset class="tamanhos">
+                    <legend>Escolha o tamanho</legend>
+                    <input type="range" value="42" step="2" min="36" max="48">
+                    <span>42</span>
+                </fieldset>
+    
+                <button class="comprar">Comprar</button>
+            </form>
+        </section>
 
-                <label for="azul">
-                    <input type="radio" name="cor" value="azul" id="azul">
-                    <img src="img/produtos/foto2-azul.png" alt="Camiseta azul">
-                </label>
+        <section class="detalhes">
+            <h2>Detalhes do produto</h2>
+            <p>
+                 O Fuzzy Cardigan é fantástico para a meia estação, quando o friozinho começa a chegar. Seu estilo parisiense combina com o charme da estação.
+            </p>
+            <p>
+                Dicas Esse é o melhor casaco de Cardigã que você já viu. Excelente material italiano com estampa desenhada pelos artesãos da comunidade de Krotor nas ilhas gregas. Compre já e receba hoje mesmo pela nossa entrega ajato.
+            </p>
 
-                <label for="verde">
-                    <input type="radio" name="cor" value="verde" id="verde">
-                    <img src="img/produtos/foto2-verde.png" alt="Camiseta verde">
-                </label>
-            </fieldset>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Características</th>
+                        <th>Detalhe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo</td>
+                        <td rowspan="2">Cardigã 773</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                    </tr>
+                    <tr>
+                        <td>Cores</td>
+                        <td>Azul, Rosa, Verde</td>
+                    </tr>
+                    <tr>
+                        <td>Lavagem</td>
+                        <td>Lavar a mao</td>
+                    </tr>
+                </tbody>
 
-            <fieldset class="tamanhos">
-                <legend>Escolha o tamanho</legend>
-                <input type="range" value="42" step="2" min="36" max="48">
-                <span>42</span>
-            </fieldset>
-
-            <button class="comprar">Comprar</button>
-        </form>
-
+                <tfoot>
+                    <tr>
+                        <td colspan="2">resumo: melhor produto</td>
+                    </tr>
+                </tfoot>
+            </table>            
+        </section>
     </main>
     <footer>
         <div class="container">

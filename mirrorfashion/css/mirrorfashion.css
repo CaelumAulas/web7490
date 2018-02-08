@@ -463,6 +463,36 @@ footer [href*="google.com"]{
     cursor: pointer;
 }
 
+.detalhes h2 {
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+
+.detalhes p {
+    line-height: 26px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.detalhes table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.detalhes th {
+    background-color: royalblue;
+    color: white;
+}
+
+.detalhes td {
+    background-color: salmon;
+}
+
+.detalhes th,
+.detalhes td {
+    padding: 8px 10px;
+}
 
 
 
