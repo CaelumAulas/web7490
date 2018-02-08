@@ -378,15 +378,17 @@ footer [href*="google.com"]{
     font-style: italic;
 }
 
-.cores {
-    margin-top: 30px;
-}
-
-.cores legend {
+.produto legend {
     font-size: 14px;
     letter-spacing: 2px;
     margin-bottom: 10px;
     text-transform: uppercase;
+}
+
+.cores {
+    margin-top: 30px;
+    position: relative;
+    padding-top: 65px;
 }
 
 .cores img {
@@ -400,18 +402,68 @@ footer [href*="google.com"]{
 
 .cores label {
     display: block;
-    padding: 10px;
 }
 
-.cores label[for=rosa] {
+.cores label::before {
+    border-radius: 50%;
+    content: '';
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 25px;
+}
+
+.cores label[for=rosa]::before {
     background-color: pink;
+    left: 14px;
 }
 
-.cores label[for=azul] {
+.cores label[for=azul]::before {
     background-color: aqua;
+    left: 75px;
 }
 
-.cores label[for=verde] {
+.cores label[for=verde]::before {
     background-color: greenyellow;
+    left: 135px;
 }
+
+/* quando input checar o irmao :before fica com borda */
+.cores input:checked + ::before {
+    border: 3px solid black;
+}
+
+/* quando clica a cor fica vermelho */
+.cores label:active::before{
+    background-color: red;
+}
+
+.cores input {
+    display: none;
+}
+
+.tamanhos {
+    margin-top: 20px;
+}
+
+.comprar {
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: rgb(173, 255, 47);
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: darkgreen;
+    margin: 30px auto;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+
 /* #endregion produto */

@@ -35,30 +35,28 @@
                 <legend>Escolha a cor</legend>
                 
                 <label for="rosa">
-                    <span>Rosa:</span>
                     <input type="radio" name="cor" value="rosa" id="rosa" checked>
                     <img src="img/produtos/foto2-rosa.png" alt="Camiseta Rosa">
                 </label>
 
                 <label for="azul">
-                    <span>Azul:</span>
                     <input type="radio" name="cor" value="azul" id="azul">
                     <img src="img/produtos/foto2-azul.png" alt="Camiseta azul">
                 </label>
 
                 <label for="verde">
-                    <span>Verde:</span>
                     <input type="radio" name="cor" value="verde" id="verde">
                     <img src="img/produtos/foto2-verde.png" alt="Camiseta verde">
                 </label>
             </fieldset>
 
-            <fieldset >
+            <fieldset class="tamanhos">
                 <legend>Escolha o tamanho</legend>
-                <input type="text">
+                <input type="range" value="42" step="2" min="36" max="48">
+                <span>42</span>
             </fieldset>
 
-            <button>Comprar</button>
+            <button class="comprar">Comprar</button>
         </form>
 
     </main>
