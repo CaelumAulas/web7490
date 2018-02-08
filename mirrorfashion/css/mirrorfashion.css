@@ -494,6 +494,54 @@ footer [href*="google.com"]{
     padding: 8px 10px;
 }
 
+@media (min-width: 1008px){
+
+    .produto {
+        padding-left: 40%;
+        position: relative;
+        margin: 20px 0;
+    }
+
+    .produto .cores,
+    .produto .cores label::before {
+        position: static;
+    }
+
+    .produto .cores {
+        padding-top: 0;
+    }
+
+    .produto .cores img {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        border: 2px solid #ccc;
+        height: 100%;
+    }
+
+    .produto .cores label {
+        display: inline-block;
+    }
+
+    .produto form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .produto fieldset {
+        width: 50%;
+    }
+
+    .produto .tamanhos {
+        margin-top: 30px;
+    }
+
+    .produto .tamanhos legend {
+        margin-bottom: 25px;
+    }
+
+}
+
 
 
 /* #endregion produto */
