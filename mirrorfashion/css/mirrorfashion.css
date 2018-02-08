@@ -365,6 +365,53 @@ footer [href*="google.com"]{
         width: 49%;
     }
 }
-
-
 /* #endregion mobile */
+
+/* #region produto */
+.produto h1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.produto h1 + p {
+    font-style: italic;
+}
+
+.cores {
+    margin-top: 30px;
+}
+
+.cores legend {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.cores img {
+    display: none;
+    max-width: 100%;
+}
+
+.cores input:checked + img {
+    display: inline-block;
+}
+
+.cores label {
+    display: block;
+    padding: 10px;
+}
+
+.cores label[for=rosa] {
+    background-color: pink;
+}
+
+.cores label[for=azul] {
+    background-color: aqua;
+}
+
+.cores label[for=verde] {
+    background-color: greenyellow;
+}
+/* #endregion produto */
