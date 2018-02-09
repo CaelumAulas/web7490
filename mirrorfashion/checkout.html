@@ -20,7 +20,7 @@
         <div class="row">
 
             <div class="col-md-4">
-                <aside class="card mb-5">
+                <aside class="card mb-3">
                     <div class="card-header">
                         Sua Compra:
                     </div>
@@ -33,10 +33,24 @@
                             <dt>Tamanho</dt>
                             <dd>38</dd>
                             <dt>Preço</dt>
-                            <dd>R$ 127,67</dd>
+                            <dd id="preco">R$ 127,67</dd>
                         </dl>            
                     </div>
                 </aside>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                            <div class="form-group">
+                                <label for="qtd">Quantidade:</label>
+                                <input type="number" min="1" max="99" id="qtd" value="1" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="total">Total:</label>
+                                <output id="total" class="form-control">R$ 127,67</output>
+                            </div>
+                    </div>
+                </div>
+
             </div>
 
             <form class="col-md-8">
@@ -102,5 +116,28 @@
 
         </div>
     </main>
+
+    <script type="text/javascript">
+        
+        function calculaTotal(){
+
+            let precoBruto = preco.textContent.replace('R$ ', '').replace(',', '.'),
+                resultado = qtd.value * precoBruto
+
+            total.value = resultado.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+        }
+
+        qtd.oninput = calculaTotal
+  
+        /*
+        var inputs = document.querySelectorAll(`input`)
+
+        for(let ipt of inputs) {
+            ipt.addEventListener('input', function(){
+                console.log(`clicou`)
+            })
+        }
+        */ 
+    </script>
 </body>
 </html>
